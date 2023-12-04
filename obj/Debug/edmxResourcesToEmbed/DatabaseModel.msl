@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RegisteredUsersModelStoreContainer" CdmEntityContainer="RegisteredUsersEntities">
+    <EntitySetMapping Name="ModuleTables">
+      <EntityTypeMapping TypeName="RegisteredUsersModel.ModuleTable">
+        <MappingFragment StoreEntitySet="ModuleTable">
+          <ScalarProperty Name="Module_Code" ColumnName="Module_Code" />
+          <ScalarProperty Name="Semester_start_Date" ColumnName="Semester_start_Date" />
+          <ScalarProperty Name="Module_name" ColumnName="Module_name" />
+          <ScalarProperty Name="Module_Credits" ColumnName="Module_Credits" />
+          <ScalarProperty Name="Module_Weekly_classhrs" ColumnName="Module_Weekly_classhrs" />
+          <ScalarProperty Name="Total_semester_weeks" ColumnName="Total_semester_weeks" />
+          <ScalarProperty Name="Weekly_Self_Study_Hours" ColumnName="Weekly_Self_Study_Hours" />
+          <ScalarProperty Name="Certain_Day" ColumnName="Certain_Day" />
+          <ScalarProperty Name="Recorded_Hours" ColumnName="Recorded_Hours" />
+          <ScalarProperty Name="Remaining_Weekly_Self_Study_Hours" ColumnName="Remaining_Weekly_Self_Study_Hours" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="RegisteredUsersModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
